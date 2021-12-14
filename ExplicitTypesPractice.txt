@@ -1,0 +1,53 @@
+//explicit types
+
+let character:string;
+let age:number;
+let isLoggedin:boolean;
+
+//arrays
+
+let ninjas:string[]=[];
+
+ninjas.push('shivansh');
+
+console.log(ninjas);
+
+//union types
+let mixed:(string|number|boolean)[]=[];
+
+mixed.push("hi",1,"hello",false)
+
+console.log(mixed);
+
+//utype on variable
+
+let uid:string|number|boolean;
+
+uid='123';
+uid=123;
+uid=true;
+
+//objects
+
+let ninjaOne:object;
+
+//ninjaOne=["shivansh"] //array is also a kind of object
+ninjaOne={
+    name:"shivansh",
+    age:22
+}
+
+ninjaOne['course']='bca';
+
+let ninjaTwo:{
+    name:string,
+    age:number,
+    online:boolean
+}
+
+
+ninjaTwo={
+    name:'0012',
+    age:22,
+    online:true,
+}

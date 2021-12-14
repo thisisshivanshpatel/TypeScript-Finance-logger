@@ -1,0 +1,18 @@
+let greet:Function;   //we can also declare Functions explicitly
+
+greet=()=>{
+    console.log(`hello again`);   
+}
+
+const add=(a:number,b:number,c:number|string=10):void=>{   //returns void
+    console.log(a+b);
+    console.log(c);
+}
+
+add(5,10)
+
+const substract=(a:number,b:number):number=>a-b;     //return type declared
+
+let result=substract(25,8);
+
+console.log(`Answers=>${result}`);

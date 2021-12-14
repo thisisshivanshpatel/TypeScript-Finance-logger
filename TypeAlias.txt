@@ -1,0 +1,16 @@
+//custom type alias
+
+type StringOrNum=string | number;
+type objWithName={name:string,uid:StringOrNum};
+
+const logDetails=(uid:StringOrNum,item:string):void=>{
+    console.log(`${item} has a uid of ${uid}`);
+}
+
+logDetails(54321,'Chips')
+
+const greet=(user:objWithName):void=>{
+    console.log(`${user.name} has uid=>${user.uid}`);
+}
+
+greet({name:'shivansh',uid:5678})
